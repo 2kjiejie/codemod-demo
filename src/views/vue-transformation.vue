@@ -15,6 +15,8 @@
     <slot-scope-attribute></slot-scope-attribute>
     <h1>slot-attribute</h1>
     <slot-attribute title="those tags need to be deleted in vue3"></slot-attribute>
+    <h1>slot-default</h1>
+    <slot-default title="those tags need to be deleted in vue3"></slot-default>
   </div>
 </template>
 
@@ -26,6 +28,7 @@ import TransitionGroupRoot from "../components/transition-group-root";
 import VForTemplateKey from "../components/v-for-template-key";
 import SlotScopeAttribute from "../components/slot-scope-attribute-parent";
 import SlotAttribute from "../components/slot-attribute";
+import SlotDefault from "../components/slot-default";
 
 export default {
   name: 'vue-transformation',
@@ -36,7 +39,8 @@ export default {
     vForVIfPrecedenceChange,
     vBindOrderSensitive,
     vElseIfKey,
-    SlotAttribute
+    SlotAttribute,
+    SlotDefault
   }
 }
 </script>

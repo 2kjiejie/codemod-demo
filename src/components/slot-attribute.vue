@@ -1,24 +1,19 @@
 <template>
   <div>
     <base-layout>
-      <p>Need to be deleted in vue3</p>
-      <p>Need to be deleted  in vue3</p>
-      <h3>Need to be deleted  in vue3</h3>
-      <div class="hello">
-        <p>Need to be deleted  in vue3</p>
-      </div>
-      <template v-slot:default>
-        <p>default A paragraph for the main content.</p>
-        <p>default And another one.</p>
-      </template>
+      <template v-slot:title>title-content</template>
     </base-layout>
   </div>
 </template>
 
-
 <script>
+import baseLayout from "./base-layout";
+
 export default {
-  name: "slot-attribute"
+  name: "slot-attribute",
+  components: {
+    baseLayout
+  }
 }
 </script>
 
