@@ -4,7 +4,10 @@
     <add_emit_declaration></add_emit_declaration>
     <define_component></define_component>
     <global_filter></global_filter>
-    <import_composition_pai_from_vue></import_composition_pai_from_vue>
+    <import_composition_api_from_vue></import_composition_api_from_vue>
+    <new_directive_api></new_directive_api>
+    <remove_contextual_h_from_render></remove_contextual_h_from_render>
+    <remove_set_and_delete></remove_set_and_delete>
   </div>
 </template>
 
@@ -13,12 +16,19 @@ import add_emit_declaration from "@/components/add_emit_declaration";
 import define_component from "@/components/define_component";
 import global_filter from "@/components/global_filter";
 import import_composition_api_from_vue from "@/components/import_composition_api_from_vue";
+import new_directive_api from "@/components/new_directive_api";
+import remove_contextual_h_from_render from "@/components/remove_contextual_h_from_render";
+import remove_set_and_delete from "@/components/remove_set_and_delete";
 export default {
   name: "transformations",
   components:{
+    import_composition_api_from_vue,
     add_emit_declaration,
     define_component,
     global_filter,
+    new_directive_api,
+    remove_contextual_h_from_render,
+    remove_set_and_delete,
   }
 }
 </script>

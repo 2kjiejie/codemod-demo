@@ -4,7 +4,7 @@ import VueCompositionApi from '@vue/composition-api'
 
 Vue.use(VueCompositionApi)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 new Vue({
   render: h => h(App),
