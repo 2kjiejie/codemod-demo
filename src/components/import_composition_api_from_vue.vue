@@ -7,9 +7,18 @@
 </template>
 
 <script>
+//!!!!需要npm i @vue/composition-api -S
 import { reactive } from '@vue/composition-api'
 export default {
-  name: "import_composition_api_from_vue"
+  setup(){
+    const state=reactive({
+      count:0
+    })
+    const addCount=()=>{
+      state.count++
+    }
+    return{state,addCount}
+  }
 }
 </script>
 

@@ -1,6 +1,8 @@
 <template>
-  <h2>define component</h2>
-  <div id="mount-point"></div>
+  <div>
+    <h2>define component</h2>
+    <div id="mount-point"></div>
+  </div>
 </template>
 
 <script>
