@@ -1,10 +1,12 @@
 <template>
   <div class="hello">
+    <h3> tag is "ul": </h3>
     <transition-group tag="ul">
       <li v-for="item in items" :key="item">
         {{ item }}
       </li>
     </transition-group>
+    <h3> tag is "scope": </h3>
     <transition-group>
       <span v-for="item in items" :key="item" class="list-item">
         {{ item }}

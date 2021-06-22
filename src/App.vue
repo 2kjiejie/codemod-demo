@@ -2,16 +2,23 @@
   <div>
     <div>HelloWorld!</div>
     <transformations></transformations>
+    <br>
+    <hr>
+    <br>
+    <vue-transformation></vue-transformation>
   </div>
 
 </template>
 
 <script>
 import transformations from "@/views/transformations";
+import vueTransformation from "./views/vue-transformation"
+
 export default {
   name: 'App',
   components: {
-    transformations
+    transformations,
+    vueTransformation
   }
 }
 </script>
