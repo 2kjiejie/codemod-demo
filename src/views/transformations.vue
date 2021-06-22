@@ -8,6 +8,9 @@
     <new_directive_api></new_directive_api>
     <remove_contextual_h_from_render></remove_contextual_h_from_render>
     <remove_set_and_delete></remove_set_and_delete>
+
+
+    <vue-class-component></vue-class-component>
   </div>
 </template>
 
@@ -19,9 +22,11 @@ import import_composition_api_from_vue from "@/components/import_composition_api
 import new_directive_api from "@/components/new_directive_api";
 import remove_contextual_h_from_render from "@/components/remove_contextual_h_from_render";
 import remove_set_and_delete from "@/components/remove_set_and_delete";
+import VueClassComponent from "../components/vue-class-component";
 export default {
   name: "transformations",
   components:{
+    VueClassComponent,
     import_composition_api_from_vue,
     add_emit_declaration,
     define_component,
