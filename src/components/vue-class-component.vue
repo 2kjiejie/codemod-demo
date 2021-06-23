@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from '../../node_modules/vue/dist/vue.js'
 import Component from 'vue-class-component'
 
 // Define the component in class-style

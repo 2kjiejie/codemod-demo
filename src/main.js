@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from "../node_modules/vue/dist/vue.js";
 import App from './App.vue'
 import VueCompositionApi from '@vue/composition-api'
 

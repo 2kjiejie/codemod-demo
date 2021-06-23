@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Vue from "vue/dist/vue";
+import Vue from "../../node_modules/vue/dist/vue.js";
 
 const Profile = Vue.extend({
   template: `

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from "../../node_modules/vue/dist/vue.js";
 
 Vue.component('render_demo',{
   render(h) {

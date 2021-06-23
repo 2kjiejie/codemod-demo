@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from "../../node_modules/vue/dist/vue.js";
 Vue.directive('demo',{
   bind:function (el,binding,vnode){
     var s=JSON.stringify()
