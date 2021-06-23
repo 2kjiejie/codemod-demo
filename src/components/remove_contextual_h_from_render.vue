@@ -16,7 +16,6 @@ Vue.component('render_demo',{
 
 export default {
   name: "remove_contextual_h_from_render",
-
 }
 </script>
 

@@ -1,11 +1,11 @@
 <template>
   <div>
     <h2>remove set and delete</h2>
-    <p>
-      message: {{message}}
-    </p>
+    <ul>
+      <li v-for="(message,index) in msg">{{message}}---{{index}}</li>
+    </ul>
     <button @click="set">set</button>
-
+    <button @click="del">delete</button>
   </div>
 </template>
 
@@ -14,12 +14,19 @@ export default {
   name: "remove_set_and_delete",
   data(){
     return{
-      message:'hello'
+      msg:[
+          'hello',
+          'world',
+          'from data'
+      ]
     }
   },
   methods:{
     set(){
-      this.$set(this.$data,'message','hello  from remove_set_and_delete')
+      this.$set(this.$data.msg,'2',' from remove_set_and_delete')
+    },
+    del(){
+      this.$delete(this.$data.msg,'2')
     }
   }
 }
