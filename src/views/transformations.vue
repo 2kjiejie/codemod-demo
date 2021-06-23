@@ -14,8 +14,8 @@
 
 
 
-
-    <scoped-slots-to-slots :level="1">Hello</scoped-slots-to-slots>
+    <h1>scoped-slots-to-slots</h1>
+    <scoped-slots-to-slots :level="1" class="scopedSlot">Hello</scoped-slots-to-slots>
     <v-model></v-model>
     <vue-class-component></vue-class-component>
   </div>
@@ -57,5 +57,8 @@ export default {
 </script>
 
 <style scoped>
-
+.scopedSlot {
+  background: antiquewhite;
+  width: 200px;
+}
 </style>

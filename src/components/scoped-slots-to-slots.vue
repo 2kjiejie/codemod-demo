@@ -1,10 +1,3 @@
-<template>
-<div>
-  <h2>scoped-slots-to-slots</h2>
-
-</div>
-
-</template>
 
 <script>
 export default {
