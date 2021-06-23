@@ -7,11 +7,6 @@
     <transition name="fade" mode="out-in">
       <router-view :key="$route.path"></router-view>
     </transition>
-<!--    <transformations></transformations>-->
-<!--    <br>-->
-<!--    <hr>-->
-<!--    <br>-->
-<!--    <vue-transformation></vue-transformation>-->
   </div>
 
 </template>

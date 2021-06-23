@@ -1,5 +1,10 @@
+<template>
+  <div>
+    <button_counter></button_counter>
+  </div>
+</template>
 <script>
-import Vue from "../../node_modules/vue/dist/vue.js";
+import Vue from "vue";
 Vue.component('button_counter',{
   name:'button_counter',
   data(){

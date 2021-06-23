@@ -1,4 +1,4 @@
-import Vue from '../../node_modules/vue/dist/vue.js'
+import Vue from 'vue'
 import VueRouter from "vue-router";
 import transformations from "@/views/transformations";
 import vueTransformation from '@/views/vue-transformation'
