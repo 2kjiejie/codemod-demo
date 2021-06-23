@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>script改动部分</h1>
+    <h1>JavaScript改动部分</h1>
     <add_emit_declaration></add_emit_declaration>
     <define_component></define_component>
     <global_filter></global_filter>

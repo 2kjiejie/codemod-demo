@@ -7,11 +7,12 @@
 <script>
 export default {
   name: "rename_lifecycle_child",
+  props:['msg'],
   destroyed() {
-    window.alert('child component has been destroyed')
+    this.$parent.msg=this.$parent.msg+'--destroyed'
   },
   beforeDestroy() {
-    window.alert('beforeDestroy')
+    this.$parent.msg=this.$parent.msg+'--beforeDestroy'
   }
 }
 </script>
