@@ -15,7 +15,8 @@
 
 
 
-
+    <scoped-slots-to-slots :level="1">Hello</scoped-slots-to-slots>
+    <v-model></v-model>
     <vue-class-component></vue-class-component>
   </div>
 </template>
@@ -32,12 +33,15 @@ import rename_lifecycle from "@/components/rename_lifecycle";
 import render_to_resolveComponent from "@/components/render_to_resolveComponent";
 
 
-
-
+import ScopedSlotsToSlots from "../components/scoped-slots-to-slots";
+import VModel from "../components/v-model";
 import VueClassComponent from "../components/vue-class-component";
+
 export default {
   name: "transformations",
   components:{
+    ScopedSlotsToSlots,
+    VModel,
     VueClassComponent,
     import_composition_api_from_vue,
     add_emit_declaration,
