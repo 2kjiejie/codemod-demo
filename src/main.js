@@ -5,18 +5,11 @@ import router from './router'
 
 Vue.use(VueCompositionApi)
 Vue.config.productionTip = false
-
 new Vue({
   router,
   render: h => h(App),
 }).$mount('#app')
 
-//used by global_filter
-Vue.filter('capitalize',function (value){
-  if (!value)return ''
-  value=value.toString()
-  return value.charAt(0).toUpperCase()+value.slice(1)
-})
 
 //used by new_directive_api
 Vue.directive('demo',{
