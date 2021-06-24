@@ -2,19 +2,13 @@
   <div>
     <h2>global filter</h2>
     <p>before filter:</p>
-    {{msg}}
+    <input type="text" v-model="msg">
     <p>after filter:</p>
     {{msg | capitalize}}
   </div>
 </template>
 
 <script>
-import Vue from "vue";
-Vue.filter('capitalize',function (value){
-  if (!value)return ''
-  value=value.toString()
-  return value.charAt(0).toUpperCase()+value.slice(1)
-})
 export default {
   name: "global_filter",
   data(){
