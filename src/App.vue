@@ -4,9 +4,7 @@
     <router-link :to="{name:'transformations'}">transformations</router-link>
     ||
     <router-link :to="{name:'vue-transformation'}">vue-transformation</router-link>
-    <transition name="fade" mode="out-in">
       <router-view :key="$route.path"></router-view>
-    </transition>
   </div>
 
 </template>
