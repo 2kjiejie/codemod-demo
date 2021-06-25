@@ -1,10 +1,14 @@
 <template>
-  <todo-list :todos="todos">
+<div>
+    <h1>slot-scope-attribute</h1>
+    <todo-list :todos="todos">
     <template slot-scope="slotProps">
       <span v-if="slotProps.todo.isComplete">✓</span>
       <span>{{slotProps.todo.text}}</span>
     </template>
   </todo-list>
+</div>
+
 </template>
 
 <script>

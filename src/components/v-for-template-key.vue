@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>v-for-template-key</h1>
     <template v-for="item in items">
       <li
           :key="'bodying-id' + item.game.id + 'bodying-name'"

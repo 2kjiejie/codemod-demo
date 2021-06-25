@@ -1,5 +1,6 @@
 <template>
   <div>
+     <h1>v-else-if-key</h1>
     <p v-if="condition" key="yes"><strong>Yes</strong></p>
     <div v-else-if="condition1" key="no">No</div>
     <div v-else key="no">No</div>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>slot-default</h1>
     <base-layout>
       <p>Need to be deleted in vue3</p>
       <p>Need to be deleted  in vue3</p>

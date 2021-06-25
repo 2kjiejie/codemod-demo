@@ -1,5 +1,6 @@
 <template>
 <div>
+  <h1>v-for-v-if-precedence-change</h1>
   <ul>
     <li
         v-for='user in users'
