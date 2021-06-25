@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@originjs/vue-codemod": "file:../../vue-codemod",
     "@vue/composition-api": "^1.0.0-rc.12",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
