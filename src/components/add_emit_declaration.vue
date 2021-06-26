@@ -95,6 +95,7 @@ export default {
   data() {
     return {
       msg: 'the method to add the emits module',
+      text:'{{text}}'
     }
   },
   methods: {
