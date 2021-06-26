@@ -1,6 +1,7 @@
 <template>
   <div class="outer nav-links">
     <p></p>
+
     <div class="sidebar links">
       <router-link :to="{name:'home'}">Home</router-link>
       <p></p>
@@ -54,6 +55,7 @@
     <div class="content">
       <router-view :key="$route.path"></router-view>
     </div>
+
   </div>
 
 </template>
