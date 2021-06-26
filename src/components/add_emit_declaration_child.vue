@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>-----子组件-----</p>
-    子组件中text：
+    <p>-----child template-----</p>
+    text in the child template：
     <p></p>
     {{text}}
     <br>

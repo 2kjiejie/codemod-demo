@@ -17,13 +17,13 @@ Vue.directive('demo', {
         // var s=JSON.stringify()
         el.innerHTML = `
             <p>
-                自定义指令绑定值（例如v-model:foo="test"中的test）
+                value of the Custom Directives（like the test in the v-model:foo="test"）
             </p>
             <p>
                 value:${binding.value}
             </p>
             <p>
-                自定义指令的参数（例如v-model:foo中的foo）
+                arguments of the Custom Directives（like the foo in the v-model:foo="test"）
             </p>
             <p>
                 argument:${binding.arg}
@@ -42,7 +42,6 @@ Vue.component('button_counter', {
     },
     template: `
       <div>
-      <h1>render to resoleComponent</h1>
       <button @click="count++">
         Clicked {{ count }} times
       </button>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>JavaScript改动部分</h1>
+    <h1>transformations in JavaScript</h1>
     <add_emit_declaration></add_emit_declaration>
     <import_composition_api_from_vue></import_composition_api_from_vue>
     <new_directive_api></new_directive_api>
