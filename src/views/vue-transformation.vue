@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>***If the components bellow remain intact after transformation, vue-codemod is successful.***</h1>
-    <v-for-v-if-precedence-change title="'Bell' would disappear if the transformation fails"></v-for-v-if-precedence-change>
+    <v-for-v-if-precedence-change ></v-for-v-if-precedence-change>
     <v-bind-order-sensitive title="The color would change if the transformation fails"></v-bind-order-sensitive>
-    <v-else-if-key title="The word would be 'NO' if the transformation fails"></v-else-if-key>
+    <v-else-if-key></v-else-if-key>
     <transition-group-root></transition-group-root>
     <v-for-template-key></v-for-template-key>
     <slot-scope-attribute></slot-scope-attribute>
