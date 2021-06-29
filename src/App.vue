@@ -22,9 +22,6 @@
       &nbsp;
       <router-link :to="{name:'rename_lifecycle'}">rename_lifecycle</router-link>
       <p></p>
-      &nbsp;
-      <router-link :to="{name:'render_to_resolveComponent'}">render_to_resolveComponent</router-link>
-      <p></p>
       <router-link :to="{name:'vue-transformation'}">vue-transformation</router-link>
       <p></p>
       &nbsp;

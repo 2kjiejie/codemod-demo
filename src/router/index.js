@@ -8,7 +8,6 @@ import import_composition_api_from_vue from "@/components/import_composition_api
 import new_directive_api from "@/components/new_directive_api";
 import remove_set_and_delete from "@/components/remove_set_and_delete";
 import rename_lifecycle from "@/components/rename_lifecycle";
-import render_to_resolveComponent from "@/components/render_to_resolveComponent";
 
 import vForVIfPrecedenceChange from "@/components/v-for-v-if-precedence-change";
 import vBindOrderSensitive from "@/components/v-bind-order-sensitive";
@@ -61,12 +60,6 @@ const routes=[
         path:'/rename_lifecycle',
         name:'rename_lifecycle',
         component:rename_lifecycle,
-        props:true
-    },
-    {
-        path:'/render_to_resolveComponent',
-        name:'render_to_resolveComponent',
-        component:render_to_resolveComponent,
         props:true
     },
     //scoped-slots-to-slots
