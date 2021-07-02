@@ -16,3 +16,4 @@ Vue.component('button_counter', {
       </div>
     `
 })
+
