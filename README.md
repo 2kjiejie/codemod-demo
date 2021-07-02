@@ -1,6 +1,6 @@
 # codemod-demo
 
-This project is a demo for [vue-codemod](https://github.com/originjs/vue-codemod). Currently it is in vue2 and we can transform it to vue3 by vue-codemod.
+This project is a demo for vue3 migration tool [vue-codemod](https://github.com/originjs/vue-codemod). Currently it is in vue2 and we can transform it to vue3 by vue-codemod.
 
 ## Project setup in Vue2
 ```
