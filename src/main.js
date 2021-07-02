@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from './App.vue'
 import VueCompositionApi from '@vue/composition-api'
 import router from './router'
+import "./components/js_of_new_component_api"
 
 Vue.use(VueCompositionApi)
 Vue.config.productionTip = false
@@ -32,19 +33,4 @@ Vue.directive('demo', {
     }
 })
 
-//used by render_to_resolveComponent
-Vue.component('button_counter', {
-    name: 'button_counter',
-    data() {
-        return {
-            count: 0
-        }
-    },
-    template: `
-      <div>
-      <button @click="count++">
-        Clicked {{ count }} times
-      </button>
-      </div>
-    `
-})
+

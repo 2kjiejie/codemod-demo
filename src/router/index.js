@@ -5,6 +5,7 @@ import vueTransformation from '@/views/vue-transformation'
 import hello from "@/views/hello";
 import add_emit_declaration from "@/components/add_emit_declaration";
 import import_composition_api_from_vue from "@/components/import_composition_api_from_vue";
+import new_component_api from "@/components/new_component_api";
 import new_directive_api from "@/components/new_directive_api";
 import remove_set_and_delete from "@/components/remove_set_and_delete";
 import rename_lifecycle from "@/components/rename_lifecycle";
@@ -42,6 +43,12 @@ const routes=[
         path:'/import_composition_api_from_vue',
         name:'import_composition_api_from_vue',
         component:import_composition_api_from_vue,
+        props:true
+    },
+    {
+        path:'/new_component_api',
+        name:'new_component_api',
+        component:new_component_api,
         props:true
     },
     {

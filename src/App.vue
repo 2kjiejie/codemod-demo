@@ -11,7 +11,10 @@
       <router-link :to="{name:'add_emit_declaration'}">add_emit_declaration</router-link>
       <p></p>
       &nbsp;
-      <router-link :to="{name:'import_composition_api_from_vue'}">import_composition_api-from-vue</router-link>
+      <router-link :to="{name:'import_composition_api_from_vue'}">import_composition_api_from_vue</router-link>
+      <p></p>
+      &nbsp;
+      <router-link :to="{name:'new_component_api'}">new_component_api</router-link>
       <p></p>
       &nbsp;
       <router-link :to="{name:'new_directive_api'}">new_directive_api</router-link>
