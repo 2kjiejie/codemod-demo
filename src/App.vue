@@ -51,6 +51,10 @@
       &nbsp;
       <router-link :to="{name:'slot-default'}">slot-default</router-link>
       <p></p>
+      &nbsp;
+      <router-link :to="{name:'remove-v-on-native'}">remove-v-on-native</router-link>
+      <p></p>
+
     </div>
     <div class="content">
       <router-view :key="$route.path"></router-view>

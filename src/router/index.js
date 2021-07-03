@@ -18,6 +18,7 @@ import vForTemplateKey from "@/components/v-for-template-key"
 import slotScopeAttribute from "@/components/slot-scope-attribute-parent";
 import slotAttribute from '@/components/slot-attribute';
 import slotDefault from  '@/components/slot-default';
+import RemoveVOnNative from "../components/remove-v-on-native";
 
 Vue.use(VueRouter)
 const routes=[
@@ -124,6 +125,12 @@ const routes=[
         component:slotDefault,
         props:true
     },
+    {
+        path:'/remove-v-on-native',
+        name:'remove-v-on-native',
+        component: RemoveVOnNative,
+        props: true
+    }
 
 ]
 

@@ -9,6 +9,7 @@
     <slot-scope-attribute></slot-scope-attribute>
     <slot-attribute title="those tags need to be deleted in vue3"></slot-attribute>
     <slot-default title="those tags need to be deleted in vue3"></slot-default>
+    <remove-v-on-native></remove-v-on-native>
   </div>
 </template>
 
@@ -21,10 +22,12 @@ import VForTemplateKey from "../components/v-for-template-key";
 import SlotScopeAttribute from "../components/slot-scope-attribute-parent";
 import SlotAttribute from "../components/slot-attribute";
 import SlotDefault from "../components/slot-default";
+import RemoveVOnNative from "../components/remove-v-on-native";
 
 export default {
   name: 'vue-transformation',
   components: {
+    RemoveVOnNative,
     SlotScopeAttribute,
     VForTemplateKey,
     TransitionGroupRoot,
