@@ -20,6 +20,9 @@
       <router-link :to="{name:'new_directive_api'}">new_directive_api</router-link>
       <p></p>
       &nbsp;
+      <router-link :to="{name:'next_tick'}">next_tick</router-link>
+      <p></p>
+      &nbsp;
       <router-link :to="{name:'remove_set_and_delete'}">remove_set_and_delete</router-link>
       <p></p>
       &nbsp;
@@ -107,7 +110,7 @@ export default {
   position: fixed;
   z-index: 1;
   border-right: 1px solid grey;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .content {

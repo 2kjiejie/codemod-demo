@@ -1,5 +1,7 @@
 <template>
-  <h1>hello to the demo of vue-codemod</h1>
+  <div>
+    <h1>hello to the demo of vue-codemod</h1>
+  </div>
 </template>
 
 <script>
