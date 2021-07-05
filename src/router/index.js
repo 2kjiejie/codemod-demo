@@ -19,6 +19,7 @@ import slotScopeAttribute from "@/components/slot-scope-attribute-parent";
 import slotAttribute from '@/components/slot-attribute';
 import slotDefault from  '@/components/slot-default';
 import RemoveVOnNative from "../components/remove-v-on-native";
+import RemoveListener from '../components/remove-listener.vue';
 
 Vue.use(VueRouter)
 const routes=[
@@ -130,8 +131,13 @@ const routes=[
         name:'remove-v-on-native',
         component: RemoveVOnNative,
         props: true
+    },
+    {
+        path:'/remove-listeners',
+        name:'remove-listeners',
+        component: RemoveListener,
+        props: true
     }
-
 ]
 
 const router=new VueRouter({

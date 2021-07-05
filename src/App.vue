@@ -54,7 +54,9 @@
       &nbsp;
       <router-link :to="{name:'remove-v-on-native'}">remove-v-on-native</router-link>
       <p></p>
-
+      &nbsp;
+      <router-link :to="{name:'remove-listeners'}">remove-listeners</router-link>
+      <p></p>
     </div>
     <div class="content">
       <router-view :key="$route.path"></router-view>
@@ -105,6 +107,7 @@ export default {
   position: fixed;
   z-index: 1;
   border-right: 1px solid grey;
+  overflow-x: hidden; 
 }
 
 .content {
