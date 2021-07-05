@@ -3,7 +3,7 @@ import App from './App.vue'
 import VueCompositionApi from '@vue/composition-api'
 import router from './router'
 import "./components/button_counter"
-import store from "@/store";
+import store from "./store";
 
 Vue.use(VueCompositionApi)
 Vue.config.productionTip = false

@@ -20,7 +20,7 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
     <div style="border: solid 1px blue;margin-bottom: 100px">
       <h2>Example</h2>
       <h3>Vue nextTick</h3>
-      <p>{{this.$store.state.message}}</p>
+      <p>{{message}}</p>
       <h3>this.$nextTick</h3>
       <p id="h">{{msg}}</p>
       <button @click="changed">change message</button>
@@ -30,7 +30,7 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
 
 <script>
 import Vue from "vue";
-import store from "@/store";
+import store from "../store";
 
 Vue.nextTick(() => {
   store.state.message = "message from nextTick function"
@@ -40,6 +40,11 @@ export default {
   data() {
     return {
       msg: "message in this.$next_tick"
+    }
+  },
+  computed:{
+    message(){
+      return this.$store.state.message
     }
   },
   methods: {
