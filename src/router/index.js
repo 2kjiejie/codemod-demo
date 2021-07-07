@@ -7,6 +7,7 @@ import add_emit_declaration from "@/components/add_emit_declaration";
 import import_composition_api_from_vue from "@/components/import_composition_api_from_vue";
 import new_component_api from "@/components/new_component_api";
 import new_directive_api from "@/components/new_directive_api";
+import next_tick from "@/components/next_tick";
 import remove_set_and_delete from "@/components/remove_set_and_delete";
 import rename_lifecycle from "@/components/rename_lifecycle";
 
@@ -19,6 +20,7 @@ import slotScopeAttribute from "@/components/slot-scope-attribute-parent";
 import slotAttribute from '@/components/slot-attribute';
 import slotDefault from  '@/components/slot-default';
 import RemoveVOnNative from "../components/remove-v-on-native";
+import RemoveListener from '../components/remove-listener.vue';
 
 Vue.use(VueRouter)
 const routes=[
@@ -47,7 +49,7 @@ const routes=[
         props:true
     },
     {
-        path:'/new_component_api',
+        path:'/button_counter',
         name:'new_component_api',
         component:new_component_api,
         props:true
@@ -56,6 +58,12 @@ const routes=[
         path:'/new_directive_api',
         name:'new_directive_api',
         component:new_directive_api,
+        props:true
+    },
+    {
+        path:'/next_tick',
+        name:'next_tick',
+        component:next_tick,
         props:true
     },
     {
@@ -130,8 +138,13 @@ const routes=[
         name:'remove-v-on-native',
         component: RemoveVOnNative,
         props: true
+    },
+    {
+        path:'/remove-listeners',
+        name:'remove-listeners',
+        component: RemoveListener,
+        props: true
     }
-
 ]
 
 const router=new VueRouter({

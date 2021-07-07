@@ -9,7 +9,7 @@
       <h2>Migration Strategy</h2>
       <p>We need to delete the contents outside the <code>template</code> with <code>v-slot</code></p>
       <h2>Example</h2>
-      <p>These contents will be removed and the contents inside the slot will show up.</p>
+      <p>These contents should remain unchanged after transformation</p>
     </div>
     <base-layout>
       <p>Need to be deleted in vue3</p>
@@ -32,7 +32,7 @@ import baseLayout from "./base-layout";
 
 export default {
   name: "slot-default",
-  comments: {
+  components: {
     baseLayout
   }
 }

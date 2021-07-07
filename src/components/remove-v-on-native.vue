@@ -12,7 +12,10 @@
       <h2>Migration Strategy</h2>
       <p>We need to remove <code>.native</code> and also define the emit events in the child component.</p>
       <h2>Example</h2>
-      <p>In this example, we create 3 buttons with same child component. The click event is tha native event, which means the second button shouldn't have any reactivities when clicking. All the functions should remain unchanged after transformation.</p>
+      <p>
+        In this example, we create 3 buttons with same child component. The click event is tha native event, which means the second button shouldn't have any reactivities when clicking. 
+        The second button should obtain functions after transformation.
+      </p>
     </div>
     <div>
       <remove-v-on-native-child @click.native="clickHandler">The click event with .native</remove-v-on-native-child>
