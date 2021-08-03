@@ -59,7 +59,7 @@
       <p></p>
       &nbsp;
       <router-link :to="{name:'remove-listeners'}">remove-listeners</router-link>
-      <p></p>
+      <p style="height: 100px"></p>
     </div>
     <div class="content">
       <router-view :key="$route.path"></router-view>
@@ -110,7 +110,12 @@ export default {
   position: fixed;
   z-index: 1;
   border-right: 1px solid grey;
-  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.links {
+  padding-right: 20px;
+  list-style: none;
 }
 
 .content {
@@ -122,16 +127,12 @@ export default {
   width: 100%;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
 }
 
-.links{
-  padding-right: 20px;
-  list-style: none;
-}
 
-.links:hover{
+.links:hover {
   /*text-decoration: underline;*/
   color: blue;
 }
