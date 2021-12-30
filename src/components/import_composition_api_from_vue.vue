@@ -12,7 +12,7 @@
     </div>
     <div style="border: blue 1px solid; margin-bottom: 100px">
       <h2>Example</h2>
-      <p>{{state.count}}</p>
+      <p>{{ state.count }}</p>
       <button @click="addCount">add</button>
       <p>(state.count and the click function is defined in the setup())</p>
     </div>
@@ -20,16 +20,17 @@
 </template>
 
 <script>
-import { reactive } from '@vue/composition-api'
+import {reactive} from '@vue/composition-api'
+
 export default {
-  setup(){
-    const state=reactive({
-      count:0
+  setup() {
+    const state = reactive({
+      count: 0
     })
-    const addCount=()=>{
+    const addCount = () => {
       state.count++
     }
-    return{state,addCount}
+    return {state, addCount}
   }
 }
 </script>

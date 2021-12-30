@@ -20,17 +20,25 @@
       </ul>
       <h2>3.x Syntax</h2>
       <p>
-        In Vue 3, however, we’ve created a more cohesive API for custom directives. As you can see, they differ greatly from our component lifecycle methods even though we’re hooking into similar events. We’ve now unified them like so:
+        In Vue 3, however, we’ve created a more cohesive API for custom directives. As you can see, they differ greatly
+        from our component lifecycle methods even though we’re hooking into similar events. We’ve now unified them like
+        so:
       </p>
       <ul>
-        <li>        created - new! This is called before the element's attributes or event listeners are applied.</li>
-        <li>        bind → beforeMount</li>
-        <li>        inserted → mounted</li>
-        <li>        beforeUpdate: new! This is called before the element itself is updated, much like the component lifecycle hooks.</li>
-        <li>        update → removed! There were too many similarities to updated, so this is redundant. Please use updated instead.</li>
-        <li>        componentUpdated → updated</li>
-        <li>        beforeUnmount: new! Similar to component lifecycle hooks, this will be called right before an element is unmounted.</li>
-        <li>        unbind -> unmounted</li>
+        <li> created - new! This is called before the element's attributes or event listeners are applied.</li>
+        <li> bind → beforeMount</li>
+        <li> inserted → mounted</li>
+        <li> beforeUpdate: new! This is called before the element itself is updated, much like the component lifecycle
+          hooks.
+        </li>
+        <li> update → removed! There were too many similarities to updated, so this is redundant. Please use updated
+          instead.
+        </li>
+        <li> componentUpdated → updated</li>
+        <li> beforeUnmount: new! Similar to component lifecycle hooks, this will be called right before an element is
+          unmounted.
+        </li>
+        <li> unbind -> unmounted</li>
       </ul>
     </div>
     <div style="border: solid 1px blue;margin-bottom: 100px">

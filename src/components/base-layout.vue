@@ -1,9 +1,9 @@
 <template>
-<div>
-  <slot name="one"></slot>
-  <slot></slot>
-  <slot name="title">slot title</slot>
-</div>
+  <div>
+    <slot name="one"></slot>
+    <slot></slot>
+    <slot name="title">slot title</slot>
+  </div>
 </template>
 
 <script>

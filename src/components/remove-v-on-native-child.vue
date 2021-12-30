@@ -1,5 +1,7 @@
 <template>
-  <button type="button" @click="clickHandler" class="button"><slot /></button>
+  <button type="button" @click="clickHandler" class="button">
+    <slot/>
+  </button>
 </template>
 
 <script>
@@ -8,7 +10,7 @@ export default {
   name: "remove-v-on-native-child",
 
   methods: {
-    clickHandler () {
+    clickHandler() {
       this.$emit('vclick') // 触发 `vclick` 事件
 
     }
