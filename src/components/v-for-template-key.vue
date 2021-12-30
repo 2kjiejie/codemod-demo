@@ -3,7 +3,8 @@
     <div>
       <h1>v-for-template-key</h1>
       <h2>2.x Syntax</h2>
-      <p>In Vue 2.x, a <code>template</code> tag could not have a key. Instead, you could place the keys on each of its children.</p>
+      <p>In Vue 2.x, a <code>template</code> tag could not have a key. Instead, you could place the keys on each of its
+        children.</p>
       <h2>3.x Syntax</h2>
       <p>In Vue 3.x, the <code>key</code> should be placed on the <code>template</code> tag instead.</p>
       <h2>Migration Strategy</h2>
@@ -17,14 +18,14 @@
             :key="'bodying-id' + item.game.id + 'bodying-name'"
             role="presentation"
         >
-          Game Id: {{item.game.id}}
+          Game Id: {{ item.game.id }}
         </li>
         <div>
           <li
               :key="'bottom-' + item.id"
               role="presentation"
           >
-            Game Name: {{item.game.name}}
+            Game Name: {{ item.game.name }}
           </li>
         </div>
       </template>
@@ -34,7 +35,7 @@
 <script>
 export default {
   name: "v-for-template-key",
-  data () {
+  data() {
     return {
       items: [
         {

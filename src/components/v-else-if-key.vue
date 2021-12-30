@@ -4,7 +4,8 @@
     <h2>2.x Syntax</h2>
     <p>In 2.x, it was recommended to use keys on <code>v-if/v-else/v-else-if</code> branches.</p>
     <h2>3.x Syntax</h2>
-    <p>In 3.x, <code>key</code> attribute on <code>v-if/v-else/v-else-if</code> branches is no longer recommended, since unique keys are now automatically generated on conditional branches if you don't provide them. </p>
+    <p>In 3.x, <code>key</code> attribute on <code>v-if/v-else/v-else-if</code> branches is no longer recommended, since
+      unique keys are now automatically generated on conditional branches if you don't provide them. </p>
     <h2>Migration Strategy</h2>
     <p>In most cases, removing those keys can be the best choice.</p>
     <h2>Example</h2>
@@ -20,7 +21,7 @@
 <script>
 export default {
   name: "v-else-if-key",
-  data () {
+  data() {
     return {
       condition: true,
       condition1: true,
